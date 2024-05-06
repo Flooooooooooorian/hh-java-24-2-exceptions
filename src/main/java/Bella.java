@@ -1,5 +1,5 @@
 class Bella {
-    static String machPizza() {
+    static String machPizza() throws OfenKaputtException{
         System.out.println("Bella: Ich belege die Pizza");
         String pizza = "margherita Pizza";
 

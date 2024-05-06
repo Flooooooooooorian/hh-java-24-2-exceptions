@@ -7,8 +7,10 @@ class SuperOfen2000Test {
     @Test
     void testOfen() {
         //GIVEN
+        OfenKaputtException ex = assertThrows(OfenKaputtException.class, () -> {SuperOfen2000.backe("test-pizza");});
+        assertEquals("Feuer, Rauch und Funken", ex.getMessage());
 
-        assertThrows(OfenKaputtException.class, () -> {SuperOfen2000.backe("test-pizza");});
+        System.out.println(ex);
     }
 
 }
